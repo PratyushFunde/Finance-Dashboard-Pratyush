@@ -1,0 +1,196 @@
+@import "tailwindcss";
+
+/* LIGHT THEME */
+:root {
+  /* Backgrounds */
+  --bg: #EAF1FB;
+  /* soft bluish background */
+  --card: #F8FAFC;
+  /* main cards */
+  --card-soft: #EEF3FB;
+  /* slightly tinted cards */
+
+  /* Text */
+  --text: #1E293B;
+  /* main text */
+  --text-muted: #64748B;
+
+  /* Primary (blue/purple tone) */
+  --primary: #7C8CF8;
+  --primary-soft: #C7D2FE;
+
+  /* Accent (teal like charts) */
+  --accent: #6DD3C7;
+  --accent-soft: #CFFAFE;
+
+  /* Status */
+  --success: #34D399;
+  --danger: #F87171;
+
+  /* Borders */
+  --border: #D9E2EC;
+
+  /* Chart colors */
+  --chart-income: #6DD3C7;
+  --chart-expense: #7C8CF8;
+  --chart-primary: #7C8CF8;
+  --chart-secondary: #1E293B;
+  --chart-fill: rgba(124, 140, 248, 0.25);
+}
+
+.dark {
+  /* Backgrounds */
+  --bg: #0F172A;
+  /* deep navy */
+  --card: #1E293B;
+  /* main card */
+  --card-soft: #273449;
+
+  /* Text */
+  --text: #F1F5F9;
+  --text-muted: #94A3B8;
+
+  /* Primary */
+  --primary: #8B9CFF;
+  --primary-soft: #3730A3;
+
+  /* Accent */
+  --accent: #5EEAD4;
+  --accent-soft: #134E4A;
+
+  /* Status */
+  --success: #4ADE80;
+  --danger: #F87171;
+
+  /* Borders */
+  --border: #334155;
+
+  /* Chart colors */
+  --chart-income: #5EEAD4;
+  --chart-expense: #8B9CFF;
+
+  --chart-primary: #8B9CFF;
+  --chart-secondary: #CBD5F5;
+  --chart-fill: rgba(139, 156, 255, 0.2);
+}
+
+/* arrows color */
+.ant-pagination-prev button,
+.ant-pagination-next button {
+  /* color: #ff0000 !important; */
+  color: var(--text) !important;
+}
+
+/* current page text */
+.ant-pagination-simple-pager {
+  /* color: #ff0000 !important; */
+  color: var(--chart-expense);
+}
+
+/* remove harsh borders */
+.ant-table {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+
+/* keep ONLY this */
+
+.ant-table {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* optional */
+.ant-table-thead > tr > th {
+  font-weight: 500;
+}
+
+/* Dropdown container */
+.theme-select-dropdown {
+  background-color: var(--card) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 10px !important;
+}
+
+/* Options */
+.theme-select-dropdown .ant-select-item {
+  color: var(--text) !important;
+}
+
+/* Hover */
+.theme-select-dropdown .ant-select-item-option-active {
+  background-color: var(--card-soft) !important;
+}
+
+/* Selected */
+.theme-select-dropdown .ant-select-item-option-selected {
+  background-color: var(--primary-soft) !important;
+  color: var(--primary) !important;
+}
+
+/* Segmented container */
+.custom-segmented {
+  background-color: var(--card-soft) !important;
+  border-radius: 10px !important;
+  padding: 4px !important;
+}
+
+/* Each item */
+.custom-segmented .ant-segmented-item {
+  color: var(--text-muted) !important;
+  border-radius: 8px !important;
+  transition: all 0.2s ease;
+}
+
+/* Active item */
+.custom-segmented .ant-segmented-item-selected {
+  background-color: var(--primary-soft) !important;
+  color: var(--primary) !important;
+  font-weight: 500;
+}
+
+/* Hover */
+.custom-segmented .ant-segmented-item:hover {
+  color: var(--text) !important;
+}
+
+/* Dropdown container */
+.custom-dropdown-menu {
+  background-color: var(--card) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 10px !important;
+  padding: 6px !important;
+}
+
+/* Each item */
+.custom-dropdown-menu .ant-dropdown-menu-item {
+  color: var(--text) !important;
+  border-radius: 8px !important;
+  transition: all 0.2s ease;
+}
+
+/* Hover */
+.custom-dropdown-menu .ant-dropdown-menu-item:hover {
+  background-color: var(--card-soft) !important;
+  color: var(--text) !important;
+}
+
+/* Active / selected */
+.custom-dropdown-menu .ant-dropdown-menu-item-active {
+  background-color: var(--primary-soft) !important;
+  color: var(--primary) !important;
+}
+
+/* Chrome, Safari, Edge */
+.ant-table-body::-webkit-scrollbar {
+  display: none;
+}
+
+.ant-table-body {
+  scrollbar-width: none;
+}
+
+.ant-table-body {
+  -ms-overflow-style: none;
+}
